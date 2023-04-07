@@ -1,17 +1,16 @@
-import { faBars, faBuilding, faBuildingShield, faBullseye, faCircle, faCircleInfo, faDiagramProject, faHome, faLaptopCode, faRectangleAd, faRectangleXmark, faServer, faTimes, faUserPlus, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faBuilding, faBuildingShield, faBullseye, faCircle, faCircleInfo, faCross, faDiagramProject, faHome, faLaptopCode, faRectangleAd, faRectangleXmark, faServer, faTimes, faUserPlus, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { useRef } from 'react'
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
+import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 function Navbar() {
-  const navref=useRef();
-  const showNavbar=()=>{
-    navref.current.classList.toggle("responsive-nav");
-  }
+  const [click,setClick]=useState(false)
+  const handleClick=()=>setClick(!click)
 
   return (
     <>
@@ -21,7 +20,7 @@ function Navbar() {
         <h2>Portfolio</h2>
         </div>
         <div className="nav-links-container">
-          <ul className="nav-links">
+          <ul className={click ? "nav-links active" : "nav-links"}>
             <li>
             <FontAwesomeIcon
             icon={faHome}
@@ -58,6 +57,17 @@ function Navbar() {
             style={{width:"20px",paddingRight:"7px"}}
             />Connect</li>
           </ul>
+        </div>
+        <div className="hamburger-menu" onClick={handleClick}>
+          {
+          click ? (<FontAwesomeIcon
+            icon={faXmark}
+            style={{width:"35px",height:"35px",color:"white"}}
+            />) 
+            : (<FontAwesomeIcon
+              icon={faBars}
+              style={{width:"35px",height:"35px",color:"white"}}
+              />)}
         </div>
     </div>
     </section>
