@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+}
+
+.nav-header-section{
+    position: relative;
+    margin: 0;
+    height: 20%;
+}
+
+.navbar-container{
+    z-index: 999;
+    margin: 20px;
+    background-image: linear-gradient(to right,rgb(31, 31, 31),#2e2d2d);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.navbar-logo{
+    padding: 10px;
+    width: 50%;
+}
+
+.navbar-logo h2{
+  color: white;
+  font-family: "Trirong", serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navbar-logo h2:hover{
+    cursor: pointer;
+}
+
+.navbar-logo img{
+    shape-rendering: crispEdges;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-logo img.svgfix rect{
+    shape-rendering: crispEdges;
+}
+
+.nav-links-container{
+    padding: 10px;
+    width: 50%;
+}
+
+.nav-links{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li{
+  color: white;
+  font-family: "Trirong", serif;
+  font-size: 19px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.nav-links li::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    transition: all 0.2s;
+    background-color: white;
+}
+
+.nav-links li:hover::before{
+    width: 100%;
+}
+
+.hamburger-menu-logo{
+    visibility: hidden;
+    opacity: 0;
+}
+
