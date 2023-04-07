@@ -1,8 +1,10 @@
 body{
     margin: 0;
 }
+/*Navbar styling*/
 
 .nav-header-section{
+    width: 100%;
     position: relative;
     margin: 0;
     height: 20%;
@@ -10,13 +12,11 @@ body{
 
 .navbar-container{
     z-index: 999;
-    margin: 20px;
-    background-image: linear-gradient(to right,rgb(31, 31, 31),#2e2d2d);
+    background-image: linear-gradient(to right,#bdc3c7, #2c3e50);
     padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 5px;
 }
 
 .navbar-logo{
@@ -25,7 +25,7 @@ body{
 }
 
 .navbar-logo h2{
-  color: white;
+  color: rgb(27, 27, 27);
   font-family: "Trirong", serif;
   font-size: 25px;
   font-weight: bold;
@@ -82,8 +82,175 @@ body{
     width: 100%;
 }
 
-.hamburger-menu-logo{
-    visibility: hidden;
-    opacity: 0;
+
+/*Main hero section styling*/
+
+.main-hero-section{
+    width: 100%;
+    height: 70vh;
 }
 
+.main-hero-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-left h1{
+    width: 50%;
+    font-size: 40px;
+    margin: 0;
+}
+
+.hero-section-left{
+    padding: 50px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-right{
+    width: 50%;
+    height: 100%;
+}
+
+.waviy {
+    position: relative;
+    width: 50%;
+  }
+  .waviy span {
+    font-family: "Trirong", serif;
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(27, 27, 27);
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+.hero-section-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.hero-section-content h2{
+    font-family: "Trirong", serif;
+    font-size: 40px;
+}
+
+.hero-section-content h1{
+  margin: 0;
+  color: rgb(27, 27, 27);
+  font-family: "Trirong", serif;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.hero-section-content h1 span{
+    font-size: 40px;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4EB5CF;
+    color: rgb(27, 27, 27);
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: absolute;
+    top: 0.2rem;
+    padding-left: 0.5rem;
+    left: 160px;
+    animation: openclose 5s ease-in-out infinite;
+  }
+  
+  .word1, .word2, .word3 {
+    font-family: tahoma;
+  }
+  
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 300px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 300px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 300px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 300px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 285px;
+    }
+    95% {
+      top: -9rem;
+      width: 285px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
