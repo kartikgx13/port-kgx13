@@ -254,14 +254,17 @@ body{
 }
 
 @media screen and (max-width: 1396px){
+  .navbar-logo h2{
+    font-size: 2rem;
+  }
+
   .main-hero-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0;
+    margin-top: 5rem;
   }
   .hero-section-left{
     width: 100%;
@@ -270,10 +273,13 @@ body{
   }
 
   .hero-section-left h1{
+    margin: 0;
+    font-size: 2rem;
     text-align: center;
   }
   
   .container{
+    font-size: 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -290,6 +296,8 @@ body{
   }
 
   .social-media-icons img{
+    width: 37px;
+    height: 37px;
     margin: 10px;
   }
 
