@@ -93,7 +93,7 @@ body{
   display: none;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1396px) {
   .nav-links{
     margin: 0;
     padding: 0;
@@ -253,7 +253,7 @@ body{
   border-radius: 50%;
 }
 
-@media screen and (max-width: 1040px){
+@media screen and (max-width: 1396px){
   .main-hero-container{
     display: flex;
     flex-direction: column;
