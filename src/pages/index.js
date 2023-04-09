@@ -15,8 +15,8 @@ export default function Home() {
       <section className="main-hero-section">
         <div className="main-hero-container">
           <div className="hero-section-left">
-            <h1>Hi There,</h1>
-            <h1>I'm Kartik Gavande</h1>
+            <h1>Hi There&#44;</h1>
+            <h1>I&#39;m Kartik Gavande</h1>
             <div className="container">
                <p>I'm into</p>
                <section className="animation">
