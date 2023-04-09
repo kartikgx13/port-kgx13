@@ -18,7 +18,7 @@ export default function Home() {
             <h1>Hi There&#44;</h1>
             <h1>I&#39;m Kartik Gavande</h1>
             <div className="container">
-               <p>I'm into</p>
+               <p>I&#39;m into</p>
                <section className="animation">
                  <div className="first"><div>Web Dev.</div></div>
                  <div className="second"><div>Data Science</div></div>
