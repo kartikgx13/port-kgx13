@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <>
       <Navbar/>
+      {/* Main-hero-section starts here */}
       <section className="main-hero-section">
         <div className="main-hero-container">
           <div className="hero-section-left">
@@ -67,6 +68,26 @@ export default function Home() {
               alt="my-image"
           />
           </div>
+          </div>
+        </div>
+      </section>
+      {/* Main-hero-section ends here */}
+
+
+      {/* About me section begins here */}
+      <section className="about-me-section">
+        <div className="main-about-container">
+          <div className="about-section-left">
+          <Image
+              width={512}
+              height={512}
+              src="/images/about1.jpg"
+              alt="my-image"
+          />
+          </div>
+          <div className="about-section-right">
+           <h1>About Me</h1>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit&#46;Alias impedit voluptatem officiis&#44;harum atque est&#44;explicabo saepe iure iste dolores animi optio pariatur ut veritatis sed deleniti quisquam&#44;nam dignissimos&#46;</p>
           </div>
         </div>
       </section>

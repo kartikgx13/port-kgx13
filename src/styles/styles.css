@@ -103,7 +103,7 @@ body{
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
     left: -100%;
@@ -119,7 +119,7 @@ body{
     color: white;
     font-family: "Trirong", serif;
     padding: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
   }
 
@@ -151,8 +151,8 @@ body{
   justify-content: center;
   align-items: center;
   padding-top: 5%;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 13%;
+  padding-right: 13%;
   height: 80%;
   width: 100%;
 }
@@ -170,6 +170,7 @@ body{
 }
 
 .social-media-icons{
+  cursor: pointer;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -199,6 +200,7 @@ body{
 }
 
 .animation > div > div {
+  height: 100%;
   text-align:center;
   width: 100%;
   padding-right: 1rem;
@@ -212,6 +214,9 @@ body{
 }
 
 .first div {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   background-color:#E05E12;
 }
 .second div {
@@ -243,6 +248,7 @@ body{
 }
 
 .my-image{
+  cursor: pointer;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -255,7 +261,7 @@ body{
 
 @media screen and (max-width: 1396px){
   .navbar-logo h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .main-hero-container{
@@ -274,26 +280,31 @@ body{
 
   .hero-section-left h1{
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
   }
   
   .container{
-    font-size: 2rem;
+    font-size: 1.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
+
   .animation{
     margin: 0;
+    height: 30px;
   }
 
   .social-media-icons{
     margin-top: 10px;
     margin-bottom: 10px;
     justify-content: center;
+    
   }
+
+  
 
   .social-media-icons img{
     width: 37px;
@@ -328,7 +339,123 @@ body{
   }
 
   .my-image img{
-    width: 300px;
-    height: 300px;
+    width: 256px;
+    height: 256px;
+  }
+}
+
+/*Main hero section styling end here*/
+
+
+/*About Me section styling starts here*/
+.about-me-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+  width: 100%;
+}
+
+.main-about-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-left: 13%;
+  padding-right: 13%;
+  height: 80%;
+  width: 100%;
+}
+
+.about-section-left{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section-left img{
+  --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+  --m:
+    left   var(--_i,0%) top    var(--_g),
+    bottom var(--_i,0%) left   var(--_g),
+    top    var(--_i,0%) right  var(--_g),
+    right  var(--_i,0%) bottom var(--_g);
+  -webkit-mask: var(--m);
+          mask: var(--m);
+  filter: grayscale();
+  transition: .3s linear;
+  cursor: pointer;
+}
+
+.about-section-left img:hover{
+  --_i: 10%;
+  filter: grayscale(0);
+}
+
+.about-section-right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.about-section-right p{
+  font-family: "Trirong", serif;
+  font-size: 1.5rem;
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.about-section-right h1{
+  font-family: "Trirong", serif;
+  font-size: 2.26rem;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1396px){
+  .main-about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 0;
+  }
+  .about-section-right p{
+    text-align: center;
+    padding: 0 10px 0 10px;
+    font-size: 1rem;
+  }
+
+  .about-section-right h1{
+    text-align: center;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .about-section-left{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .about-section-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-section-left img{
+    height: 256px;
+    width: 256px;
   }
 }

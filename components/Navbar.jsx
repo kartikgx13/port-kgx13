@@ -62,11 +62,11 @@ function Navbar() {
           {
           click ? (<FontAwesomeIcon
             icon={faXmark}
-            style={{width:"35px",height:"35px",color:"white"}}
+            style={{width:"1.5rem",height:"1.5rem",color:"white"}}
             />) 
             : (<FontAwesomeIcon
               icon={faBars}
-              style={{width:"35px",height:"35px",color:"rgb(27, 27, 27)"}}
+              style={{width:"1.5rem",height:"1.5rem",color:"rgb(27, 27, 27)"}}
               />)}
         </div>
     </div>
