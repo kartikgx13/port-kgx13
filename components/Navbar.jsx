@@ -66,7 +66,7 @@ function Navbar() {
             />) 
             : (<FontAwesomeIcon
               icon={faBars}
-              style={{width:"35px",height:"35px",color:"white"}}
+              style={{width:"35px",height:"35px",color:"rgb(27, 27, 27)"}}
               />)}
         </div>
     </div>

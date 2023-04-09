@@ -34,7 +34,7 @@ body{
 .navbar-logo h2{
   color: rgb(27, 27, 27);
   font-family: "Trirong", serif;
-  font-size: 25px;
+  font-size: 2.26rem;
   font-weight: bold;
 }
 
@@ -151,8 +151,8 @@ body{
   justify-content: center;
   align-items: center;
   padding-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
   height: 80%;
   width: 100%;
 }
@@ -160,15 +160,97 @@ body{
 .hero-section-left{
   width: 50%;
   height: 100%;
-  
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-media-icons img{
+  margin-right: 1rem;
+}
+
+.social-media-icons{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero-section-left h1{
+  font-size: 2.26rem;
+  margin: 0;
+  font-family: "Trirong", serif;
+}
+
+
+.container {
+  font-weight: bold;
+  color: black;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+}
+
+.animation > div > div {
+  text-align:center;
+  width: 100%;
+  padding-right: 1rem;
+  height:2.8rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color:#E05E12;
+}
+.second div {
+  background-color:#4EB5CF;
+}
+.third div {
+  background-color:#D9001D;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
 }
 
 .hero-section-right{
   width: 50%;
   height: 100%;
-  
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-image{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.hero-section-right img{
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 1040px){
@@ -177,12 +259,40 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .hero-section-left{
     width: 100%;
     height: 100%;
     
   }
+
+  .hero-section-left h1{
+    text-align: center;
+  }
+  
+  .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .animation{
+    margin: 0;
+  }
+
+  .social-media-icons{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .social-media-icons img{
+    margin: 10px;
+  }
+
   .hero-section-right{
     width: 100%;
     height: 100%;
@@ -199,5 +309,18 @@ body{
     background-size: cover;
     position: relative;
     background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  }
+
+  .my-image{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .my-image img{
+    width: 300px;
+    height: 300px;
   }
 }
