@@ -1,6 +1,7 @@
 import { faBars, faBuilding, faBuildingShield, faBullseye, faCircle, faCircleInfo, faCross, faDiagramProject, faHome, faLaptopCode, faRectangleAd, faRectangleXmark, faServer, faTimes, faUserPlus, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import { useEffect } from 'react'
 import { useRef } from 'react'
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
@@ -8,14 +9,35 @@ import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
-function Navbar() {
+function Navbar(props) {
+  const [navbarBackground, setNavbarBackground] = useState("transparent")
+  const [navbarShadow, setNavShadow] = useState("transparent")
   const [click,setClick]=useState(false)
   const handleClick=()=>setClick(!click)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 600) {
+        setNavbarBackground('#F8F8FF') // change to the desired background color
+        setNavShadow("rgba(100, 100, 111, 0.2) 0px 7px 29px 0px")
+
+      } else {
+        setNavbarBackground("transparent")
+        setNavShadow("none")
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <>
     <section className="nav-header-section">
-    <div className="navbar-container">
+    <div className="navbar-container" style={{ backgroundColor: navbarBackground,boxShadow:navbarShadow }}>
         <div className="navbar-logo">
         <h2>Portfolio</h2>
         </div>

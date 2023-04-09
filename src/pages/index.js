@@ -88,6 +88,11 @@ export default function Home() {
           <div className="about-section-right">
            <h1>About Me</h1>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit&#46;Alias impedit voluptatem officiis&#44;harum atque est&#44;explicabo saepe iure iste dolores animi optio pariatur ut veritatis sed deleniti quisquam&#44;nam dignissimos&#46;</p>
+           <div className="resume-button">
+            <button>
+              Download Resume
+            </button>
+           </div>
           </div>
         </div>
       </section>
