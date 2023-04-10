@@ -6,6 +6,7 @@ import { useRef } from 'react'
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
 import { useState } from 'react'
+import { Link, ScrollLink } from 'react-scroll'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +18,7 @@ function Navbar(props) {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 600) {
+      if (window.pageYOffset > 700) {
         setNavbarBackground('#F8F8FF') // change to the desired background color
         setNavShadow("rgba(100, 100, 111, 0.2) 0px 7px 29px 0px")
 
@@ -44,40 +45,55 @@ function Navbar(props) {
         <div className="nav-links-container">
           <ul className={click ? "nav-links active" : "nav-links"}>
             <li>
+            <Link to="home" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faHome}
             style={{width:"20px",paddingRight:"7px"}}
             />Home
+            </Link>
             </li>
             <li>
+            <Link to="about" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faCircleInfo}
             style={{width:"20px",paddingRight:"7px"}}
             />
-            About</li>
+            About
+            </Link>
+            </li>
             <li>
+            <Link to="skills" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faBullseye}
             style={{width:"20px",paddingRight:"7px"}}
             />
-            Skills</li>
+            Skills
+            </Link></li>
             <li>
+            <Link to="#" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faLaptopCode}
             style={{width:"20px",paddingRight:"7px"}}
             />
-            Work Experience</li>
+            Work Experience
+            </Link></li>
             <li>
+            <Link to="#" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faDiagramProject}
             style={{width:"20px",paddingRight:"7px"}}
             />
-            Projects</li>
+            Projects
+            </Link></li>
             <li>
+            <Link to="#" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faUserPlus}
             style={{width:"20px",paddingRight:"7px"}}
-            />Connect</li>
+            />
+            Connect
+            </Link>
+            </li>
           </ul>
         </div>
         <div className="hamburger-menu" onClick={handleClick}>
