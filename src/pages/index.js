@@ -6,10 +6,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFaceAngry,faInstagram } from '@fortawesome/free-solid-svg-icons'
 import { FacebookIcon, FacebookShareButton, LinkedinIcon, LinkedinShareButton } from 'next-share'
 import BarChartDemo from '../../components/BarGraph'
+import { useState } from 'react'
+import SkillsCard from '../../components/SkillsCard'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [click,setClick]=useState(false)
+  const handleClick=()=>setClick(!click)
   return (
     <>
       <Navbar/>
@@ -88,7 +92,7 @@ export default function Home() {
           </div>
           <div className="about-section-right">
            <h1>About Me</h1>
-           <p>Hello folks&#44;myself Kartik Gavande & I&#39;m currently pursuing B&#46;E&#46; in Computer Science from Thakur College of Engineering and technology&#46; My areas of interest include Front-End web development and Data Science&#46;Currently working on mini-projects from these 2 domains and looking forward to build a career in these two respectively&#46;To view my resume please click the button below&#46;</p>
+           <p>Hello folks&#44;myself <b>Kartik Gavande</b> & I&#39;m currently pursuing <b>B&#46;E&#46; in Computer Science</b> from <b>Thakur College of Engineering and technology</b>&#46; My areas of interest include <b>Front-End web development</b> and <b>Data Science</b>&#46;Currently working on mini-projects from these 2 domains and looking forward to build a <b>career</b> in these two respectively&#46;To view my resume please click the button below&#46;</p>
            <div className="resume-button">
             <button>
               Download Resume
@@ -116,54 +120,18 @@ export default function Home() {
               for data science such as <b>Scikit-learn for ML</b> and <b>Tensorflow for Deep learning</b>&#46;
             </p>
             <p className="bar-besides">
-              Besides is a comparative chart of my skills for a better understanding
+              Click the below button to toggle between <b>BarChart View</b> and <b>CardView</b>
             </p>
-            <p className="bar-below">
-              Below is a comparative chart of my skills for a better understanding
-            </p>
+            <div className="resume-button" onClick={handleClick}>
+            <button>
+            {click ? ("CardView") : ("BarChart")}
+            </button>
+           </div>
           </div>
           <div className="skills-right-section">
             <div className="bar-container">
-            <BarChartDemo label="Proficiency(%)" data={[60,40,25,75,60,50]}/>
+            {click ? (<BarChartDemo label="Proficiency(%)" data={[60,40,30,75,60,50]}/>) : (<SkillsCard/>)}
             </div>
-            {/*<div className="techlogo-container">
-              <Image
-              width={50}
-              height={50}
-              src="/images/facebook.png"
-              alt="facebook"
-              />
-              <Image
-              width={50}
-              height={50}
-              src="/images/instagram.png"
-              alt="instagram"
-              />
-              <Image
-              width={50}
-              height={50}
-              src="/images/github.png"
-              alt="github"
-              />
-              <Image
-              width={50}
-              height={50}
-              src="/images/twitter.png"
-              alt="twitter"
-              />
-              <Image
-              width={50}
-              height={50}
-              src="/images/linkedin.png"
-              alt="linkedin"
-              />
-              <Image
-              width={50}
-              height={50}
-              src="/images/linkedin.png"
-              alt="linkedin"
-              />
-            </div>*/}
           </div>
         </div>
       </section>

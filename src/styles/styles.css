@@ -605,12 +605,59 @@ button:active {
   align-items: center;
 }
 
-.bar-container{
+.skills-card-container{
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-end;
   width: 80%;
+}
+
+.bar-container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 80%;
+}
+
+.lower-skills img{
+  cursor: pointer;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.upper-skills img{
+  cursor: pointer;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.lower-skills{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper-skills{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-skills-card{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 @media screen and (max-width: 1396px){
@@ -627,13 +674,6 @@ button:active {
     text-align: center;
   }
 
-  .bar-besides{
-    display: none;
-  }
-
-  .bar-below{
-    display: initial;
-  }
 
   .skills-left-section{
     justify-content: center;
@@ -648,4 +688,34 @@ button:active {
     height: 100%;
     align-items: center;
   }
+
+  .bar-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  .lower-skills{
+    width: 100%;
+    height: 10rem;
+  }
+
+  .upper-skills{
+    width: 100%;
+    height: 10rem;
+  }
+
+  .lower-skills img{
+    height: 80px;
+    width: 80px;
+  }
+
+  .upper-skills img{
+    height: 80px;
+    width: 80px;
+  }
+
 }
