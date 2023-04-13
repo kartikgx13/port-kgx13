@@ -179,7 +179,12 @@ body{
   justify-content: center;
 }
 
+.social-media-icons img:hover{
+  transform: scale(1.2);
+}
+
 .social-media-icons img{
+  transition: transform .2s;
   margin-right: 1rem;
 }
 
@@ -366,7 +371,6 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50rem;
   width: 100%;
 }
 
@@ -435,7 +439,7 @@ body{
 }
 
 button {
-  --border: 5px;    /* the border width */
+  --border: 3px;    /* the border width */
   --slant: 0.7em;   /* control the slanted corners */
   --color: #1974D2; /* the color */
   
@@ -492,9 +496,10 @@ button:active {
   }
 
   .about-section-right h1{
+    cursor: pointer;
     text-align: center;
     padding: 0;
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .about-section-left{
@@ -532,7 +537,6 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50rem;
   width: 100%;
 }
 
@@ -543,7 +547,7 @@ button:active {
   padding-top: 5%;
   padding-left: 13%;
   padding-right: 13%;
-  height: 80%;
+  height: 100%;
   width: 100%;
 }
 
@@ -614,6 +618,12 @@ button:active {
   width: 80%;
 }
 
+.bar-container div{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .bar-container{
   height: 100%;
   display: flex;
@@ -623,31 +633,46 @@ button:active {
   width: 80%;
 }
 
-.lower-skills img{
-  cursor: pointer;
-  margin-right: 1rem;
-  margin-left: 1rem;
+.lower-skills img:hover{
+  transform: scale(1.1);
 }
 
-.upper-skills img{
+.upper-skills img:hover{
+  transform: scale(1.1);
+}
+
+.lower-skills img{
+  transition: transform .2s;
   cursor: pointer;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+
+.upper-skills img{
+  transition: transform .2s;
+  cursor: pointer;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .lower-skills{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   height: 50%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .upper-skills{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   height: 50%;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -666,7 +691,7 @@ button:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 25rem;
+    margin-top: 5rem;
     padding: 0;
   }
 
@@ -680,7 +705,7 @@ button:active {
     align-items: center;
     width: 100%;
     height: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
 
   .skills-right-section{
@@ -699,23 +724,119 @@ button:active {
   }
 
   .lower-skills{
+    margin: 0;
     width: 100%;
-    height: 10rem;
+    height: 7rem;
   }
 
   .upper-skills{
+    margin: 0;
     width: 100%;
-    height: 10rem;
+    height: 7rem;
   }
 
   .lower-skills img{
+    box-sizing: border-box;
     height: 80px;
     width: 80px;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   .upper-skills img{
+    box-sizing: border-box;
     height: 80px;
     width: 80px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .bar-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 }
+
+/*Skills section styling ends here*/
+
+
+/*Project section styling starts here*/
+.project-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main-project-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5%;
+  padding-left: 13%;
+  padding-right: 13%;
+  height: 100%;
+  width: 100%;
+}
+
+.main-project-container h1{
+  font-family: "Trirong", serif;
+  font-size: 2.26rem;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.project-cards-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+

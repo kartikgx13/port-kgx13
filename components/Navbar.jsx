@@ -78,7 +78,7 @@ function Navbar(props) {
             Work Experience
             </Link></li>
             <li>
-            <Link to="#" offset={0} spy={true} smooth={true} duration={500}>
+            <Link to="projects" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faDiagramProject}
             style={{width:"20px",paddingRight:"7px"}}

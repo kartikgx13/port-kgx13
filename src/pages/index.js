@@ -8,6 +8,7 @@ import { FacebookIcon, FacebookShareButton, LinkedinIcon, LinkedinShareButton } 
 import BarChartDemo from '../../components/BarGraph'
 import { useState } from 'react'
 import SkillsCard from '../../components/SkillsCard'
+import ProjectCard from '../../components/ProjectCard'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,35 +33,44 @@ export default function Home() {
                </section>
             </div>
             <div className="social-media-icons">
+              
               <Image
               width={50}
               height={50}
               src="/images/facebook.png"
               alt="facebook"
+              style={{boxShadow:"rgb(38, 57, 77) 0px 20px 30px -10px",padding:"5px",borderRadius:"50%"}}
               />
               <Image
               width={50}
               height={50}
               src="/images/instagram.png"
               alt="instagram"
+              style={{boxShadow:"rgb(38, 57, 77) 0px 20px 30px -10px",padding:"5px",borderRadius:"50%"}}
+
               />
               <Image
               width={50}
               height={50}
               src="/images/github.png"
               alt="github"
+              style={{boxShadow:"rgb(38, 57, 77) 0px 20px 30px -10px",padding:"5px",borderRadius:"50%"}}
+
               />
               <Image
               width={50}
               height={50}
               src="/images/twitter.png"
               alt="twitter"
+              style={{boxShadow:"rgb(38, 57, 77) 0px 20px 30px -10px",padding:"5px",borderRadius:"50%"}}
+
               />
               <Image
               width={50}
               height={50}
               src="/images/linkedin.png"
               alt="linkedin"
+              style={{boxShadow:"rgb(38, 57, 77) 0px 20px 30px -10px",padding:"5px",borderRadius:"50%"}}
               />
             </div>
           </div>
@@ -101,6 +111,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* About me section ends here */}
+
+      {/* Skills section begins here */}
 
       <section className="skills-section" id='skills'>
         <div className="main-skills-container">
@@ -119,6 +132,11 @@ export default function Home() {
               and focusing more on the libraries and packages which are more important
               for data science such as <b>Scikit-learn for ML</b> and <b>Tensorflow for Deep learning</b>&#46;
             </p>
+            <p>
+              Besides the above mentioned skills some of my other skills which I learned&#44;
+              by developing projects are <b>Unity Game Engine</b> to develop <b>android games</b> using&#44;
+              <b>C#</b> and <b>Flutter</b> which is used to develop <b>anrdoid applications using Dart</b>&#46;
+            </p>
             <p className="bar-besides">
               Click the below button to toggle between <b>BarChart View</b> and <b>CardView</b>
             </p>
@@ -135,6 +153,18 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* About me section ends here */}
+
+      {/* Porjects section begins here */}
+      {/*<section className="project-section" id='projects'>
+        <div className="main-project-container">
+          <h1>Projects</h1>
+          <div className="project-cards-container">
+          <ProjectCard/>
+          </div>
+        </div>
+  </section>*/}
+
     </>
   )
 }
