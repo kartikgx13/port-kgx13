@@ -77,8 +77,8 @@ export default function Home() {
           <div className="hero-section-right">
           <div className="my-image">
           <Image
-              width={450}
-              height={450}
+              width={350}
+              height={350}
               src="/images/myimg1.jpg"
               alt="my-image"
           />
@@ -93,15 +93,43 @@ export default function Home() {
       <section className="about-me-section" id='about'>
         <div className="main-about-container">
           <div className="about-section-left">
-          <Image
-              width={512}
-              height={512}
+          {/*<Image
+              width={400}
+              height={400}
               src="/images/about1.jpg"
               alt="my-image"
-          />
+  />*/}
+            <div class="boxes">
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
           </div>
           <div className="about-section-right">
+           <div className="diagonal-heading">
            <h1>About Me</h1>
+           </div>
            <p>Hello folks&#44;myself <b>Kartik Gavande</b> & I&#39;m currently pursuing <b>B&#46;E&#46; in Computer Science</b> from <b>Thakur College of Engineering and technology</b>&#46; My areas of interest include <b>Front-End web development</b> and <b>Data Science</b>&#46;Currently working on mini-projects from these 2 domains and looking forward to build a <b>career</b> in these two respectively&#46;To view my resume please click the button below&#46;</p>
            <div className="resume-button">
             <button>
@@ -118,7 +146,9 @@ export default function Home() {
       <section className="skills-section" id='skills'>
         <div className="main-skills-container">
           <div className="skills-left-section">
+            <div className="diagonal-heading">
             <h1>Skills</h1>
+            </div>
             <p>
               Starting from the beginning since I&#39;m keen in <b>Front-End development</b>&#44;
               <b>HTML&#44;CSS & JS</b> is a must&#46;I have developed basics projects using all these
@@ -131,11 +161,6 @@ export default function Home() {
                <b>Python</b> is must&#46;I have learnt python from <b>Basics to an Intermediate</b> level
               and focusing more on the libraries and packages which are more important
               for data science such as <b>Scikit-learn for ML</b> and <b>Tensorflow for Deep learning</b>&#46;
-            </p>
-            <p>
-              Besides the above mentioned skills some of my other skills which I learned&#44;
-              by developing projects are <b>Unity Game Engine</b> to develop <b>android games</b> using&#44;
-              <b>C#</b> and <b>Flutter</b> which is used to develop <b>anrdoid applications using Dart</b>&#46;
             </p>
             <p className="bar-besides">
               Click the below button to toggle between <b>BarChart View</b> and <b>CardView</b>
@@ -155,15 +180,19 @@ export default function Home() {
       </section>
       {/* About me section ends here */}
 
-      {/* Porjects section begins here */}
-      {/*<section className="project-section" id='projects'>
+      {/* Projects section begins here */}
+      <section className="project-section" id='projects'>
         <div className="main-project-container">
+          <div className="diagonal-heading">
           <h1>Projects</h1>
+          </div>
           <div className="project-cards-container">
+          <ProjectCard/>
+          <ProjectCard/>
           <ProjectCard/>
           </div>
         </div>
-  </section>*/}
+      </section>
 
     </>
   )
