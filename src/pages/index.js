@@ -33,28 +33,27 @@ export default function Home() {
                </section>
             </div>
             <div className="social-media-icons">
-              
               <Image
               width={50}
               height={50}
               src="/images/facebook.png"
               alt="facebook"
-              style={{boxShadow:"rgb(38, 57, 77) 0px 20px 30px -10px",padding:"5px",borderRadius:"50%"}}
+              
               />
               <Image
               width={50}
               height={50}
               src="/images/instagram.png"
               alt="instagram"
-              style={{boxShadow:"rgb(38, 57, 77) 0px 20px 30px -10px",padding:"5px",borderRadius:"50%"}}
+             
 
               />
               <Image
               width={50}
               height={50}
-              src="/images/github.png"
+              src="/images/github3.png"
               alt="github"
-              style={{boxShadow:"rgb(38, 57, 77) 0px 20px 30px -10px",padding:"5px",borderRadius:"50%"}}
+          
 
               />
               <Image
@@ -62,7 +61,7 @@ export default function Home() {
               height={50}
               src="/images/twitter.png"
               alt="twitter"
-              style={{boxShadow:"rgb(38, 57, 77) 0px 20px 30px -10px",padding:"5px",borderRadius:"50%"}}
+            
 
               />
               <Image
@@ -70,7 +69,15 @@ export default function Home() {
               height={50}
               src="/images/linkedin.png"
               alt="linkedin"
-              style={{boxShadow:"rgb(38, 57, 77) 0px 20px 30px -10px",padding:"5px",borderRadius:"50%"}}
+
+              />
+
+             <Image
+              width={50}
+              height={50}
+              src="/images/discord.png"
+              alt="linkedin"
+
               />
             </div>
           </div>
@@ -172,9 +179,7 @@ export default function Home() {
            </div>
           </div>
           <div className="skills-right-section">
-            <div className="bar-container">
             {click ? (<BarChartDemo label="Proficiency(%)" data={[60,40,30,75,60,50]}/>) : (<SkillsCard/>)}
-            </div>
           </div>
         </div>
       </section>
