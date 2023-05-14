@@ -1180,4 +1180,8 @@ button {
   .project-ending-line h2{
     font-size: 1rem;
   }
+
+  .project-details p{
+    font-size: 0.85rem;
+  }
 }
