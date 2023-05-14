@@ -176,8 +176,8 @@ body{
 .social-media-icons img{
   transition: transform .2s;
   margin-right: 1rem;
-  border-radius: 50%;
   padding: 8px;
+  border-radius: 50%;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   transition: 0.3s;
 }
@@ -194,26 +194,18 @@ body{
 }
 
 .social-media-icons img:nth-child(2):hover{
-  background: #f09433; 
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-}
-
-.social-media-icons img:nth-child(3):hover{
   background-color: #9b59b6;
 }
 
-.social-media-icons img:nth-child(4):hover{
+.social-media-icons img:nth-child(3):hover{
   background-color: #00a6de;
 }
 
-.social-media-icons img:nth-child(5):hover{
+.social-media-icons img:nth-child(4):hover{
   background-color: #007ab9;
 }
 
-.social-media-icons img:nth-child(6):hover{
+.social-media-icons img:nth-child(5):hover{
   background-color: #8c9eff;
 }
 
@@ -730,9 +722,10 @@ button {
     padding: 0;
   }
   .about-section-right p{
-    text-align: center;
+    text-align: left;
     padding: 0 10px 0 10px;
     font-size: 1rem;
+    margin-left: 0.5rem;
   }
 
   .about-section-right h1{
@@ -954,7 +947,8 @@ button {
   }
 
   .skills-left-section p{
-    text-align: center;
+    text-align: left;
+    margin-left: 0.5rem;
   }
 
 
@@ -1052,7 +1046,7 @@ button {
   transform: translate(-50%, 125%);
   width: 50%;
   border-radius: 1rem;
-  border: 1px solid #192591;
+  border: 2px solid #192591;
   background-color: ghostwhite;
   color: black;
   font-size: 1rem;
@@ -1066,6 +1060,12 @@ button {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  font-weight: bold;
+ }
+
+ .project-card-button:hover{
+  background-color: #9b59b6;
+  color: white;
  }
  
  .text-body {
@@ -1083,7 +1083,6 @@ button {
  
  /*Hover*/
  .project-card:hover {
-  transform: scale(1.05);
   border-color: #192591;
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
  }
@@ -1127,6 +1126,25 @@ button {
 
 .project-details{
   padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.project-ending-line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-ending-line h2{
+  font-family: "Trirong", serif;
+}
+
+.project-ending-line div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 @media screen and (max-width: 1048px){
@@ -1142,7 +1160,7 @@ button {
   .project-image img{
     border-radius: 20px 20px 0 0;
     width: 100%;
-    height: 150px;
+    height: 200px;
   }
 
   .project-card-details{
@@ -1154,5 +1172,12 @@ button {
     width: 30px;
   }
   
-  
+  .project-ending-line{
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .project-ending-line h2{
+    font-size: 1rem;
+  }
 }

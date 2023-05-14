@@ -15,6 +15,15 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   const [click,setClick]=useState(false)
   const handleClick=()=>setClick(!click)
+
+  const para1="This is an gaming application which is made for elementary school kids to learn various concepts of mathematics.The game tries to teach these mathematical concepts throught their favourite childhood game of snake and apples."
+  const hash1="#C #Unity #Maths #SnakeGame"
+
+  const para2="This is an android online books pdfs application made via Flutter and dart.The app feature various categories of book from various genres and the reader can dowload these pdfs via the google drive link or view it in the app itself"
+  const hash2="#Flutter #Dart #AndroidStudio #App"
+
+  const para3="This is an expenses tracker application built using Nextjs and mongodb at the backend.Through this web application the users can monitor their daily expenses and income and analyze them on the their dashboard of the web-page"
+  const hash3="#Next.js #Mongodb #Vercel"
   return (
     <>
       <Navbar/>
@@ -39,14 +48,6 @@ export default function Home() {
               src="/images/facebook.png"
               alt="facebook"
               
-              />
-              <Image
-              width={50}
-              height={50}
-              src="/images/instagram.png"
-              alt="instagram"
-             
-
               />
               <Image
               width={50}
@@ -106,26 +107,26 @@ export default function Home() {
               src="/images/about1.jpg"
               alt="my-image"
   />*/}
-            <div class="boxes">
-                <div class="box">
+            <div className="boxes">
+                <div className="box">
                     <div></div>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-                <div class="box">
+                <div className="box">
                     <div></div>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-                <div class="box">
+                <div className="box">
                     <div></div>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-                <div class="box">
+                <div className="box">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -192,9 +193,32 @@ export default function Home() {
           <h1>Projects</h1>
           </div>
           <div className="project-cards-container">
-          <ProjectCard/>
-          <ProjectCard/>
-          <ProjectCard/>
+          <ProjectCard image="/images/snake_new.jpg" project_logo="/images/snake-logo-trim.jpg" project_title="Snake Frenzy" paragraph={para1} hashtags={hash1}/>
+          <ProjectCard image="/images/book_new.jpg" project_logo="/images/book_logo_crop.jpg" project_title="Book Cafe" paragraph={para2} hashtags={hash2}/>
+          <ProjectCard image="/images/cashify_new.jpg" project_logo="/images/cashify_logo.png" project_title="Cashify" paragraph={para3} hashtags={hash3}/>
+          </div>
+          <div className="project-ending-line">
+            <h2>Many more projects coming soon!!!</h2>
+          <div>
+          <Image
+              width={35}
+              height={35}
+              src="/images/rocket.png"
+              alt="my-image"
+          />
+          <Image
+              width={35}
+              height={35}
+              src="/images/rocket.png"
+              alt="my-image"
+          />
+          <Image
+              width={35}
+              height={35}
+              src="/images/rocket.png"
+              alt="my-image"
+          />
+          </div>
           </div>
         </div>
       </section>
