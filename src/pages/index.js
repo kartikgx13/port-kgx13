@@ -9,6 +9,7 @@ import BarChartDemo from '../../components/BarGraph'
 import { useState } from 'react'
 import SkillsCard from '../../components/SkillsCard'
 import ProjectCard from '../../components/ProjectCard'
+import Timeline from '../../components/Timeline'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -222,7 +223,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <section className="education-timeline-section">
+      <div className="diagonal-heading">
+          <h1>Education</h1>
+      </div>
+      <Timeline/>
+      </section>
     </>
   )
 }
