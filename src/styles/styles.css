@@ -620,6 +620,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  gap: 1.5rem;
 }
 
 .about-section-right p{
@@ -795,6 +796,7 @@ button {
   flex-direction: column;
   width: 40%;
   height: 100%;
+  gap: 1.5rem;
 }
 
 .skills-left-section h1{
@@ -1028,6 +1030,7 @@ button {
   border: 2px solid #c3c6ce;
   transition: 0.5s ease-out;
   overflow: visible;
+  box-sizing: border-box;
  }
  
  .project-card-details {
@@ -1196,11 +1199,13 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 1.5rem;
 }
 
 .education-timeline-section h1{
   font-size: 2rem;
   transform: skew(17deg);
+  margin: 0;
 }
 
 .timeline{
@@ -1213,7 +1218,7 @@ button {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #232b2b;
+  background-image: linear-gradient(#3ca8e8,#2931b3);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -1225,7 +1230,6 @@ button {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
-  width: 30%;
 }
 
 .timeline_container::after{
@@ -1239,16 +1243,16 @@ button {
   top: 15px;
   border-radius: 50%;
   z-index: 1;
-  transition: 0.3s;
+  transition: 0.3s ease-out;
 }
 
 .timeline_container:hover::after{
   cursor: pointer;
-  background-color: #004CE8;
+  background-color:#89CFFD;
 }
 
 .left {
-  left: 13.3%;
+  left: -50%;
 }
 
 /* Place the container to the right */
@@ -1271,9 +1275,9 @@ button {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid cyan;
+  border: medium solid ghostwhite;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent cyan;
+  border-color: transparent transparent transparent ghostwhite;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -1285,16 +1289,36 @@ button {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid cyan;
+  border: medium solid ghostwhite;
   border-width: 10px 10px 10px 0;
-  border-color: transparent cyan transparent transparent;
+  border-color: transparent ghostwhite transparent transparent;
+}
+
+.right:hover::before{
+  border: medium solid #89CFFD;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #89CFFD transparent transparent;
+}
+
+.left:hover::before{
+  border: medium solid #89CFFD;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #89CFFD;
 }
 
 .timeline-content{
   padding: 1rem;
-  background-color: cyan;
+  background-color: ghostwhite;
   position: relative;
   border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  box-sizing: border-box;
+}
+
+.timeline-content:hover{
+  background-color: #89CFFD;
 }
 
 .timeline-content h2,p{
@@ -1319,13 +1343,26 @@ button {
 
   .timeline_container::before{
   left: 60px;
-  border: medium solid cyan;
+  border: medium solid ghostwhite;
   border-width: 10px 10px 10px 0;
-  border-color: transparent cyan transparent transparent;
+  border-color: transparent ghostwhite transparent transparent;
   }
 
   .left::after,.right::after {
   left: 15px;
+  }
+
+  .timeline_container:hover::before{
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 17px;
+  width: 0;
+  z-index: 1;
+  left: 60px;
+  border: medium solid #89CFFD;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #89CFFD transparent transparent;
   }
 
   .left::before{
