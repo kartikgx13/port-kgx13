@@ -998,7 +998,6 @@ button {
   flex-direction: column;
   padding-top: 5%;
   padding-bottom: 5%;
-  height: 100%;
   width: 100%;
 }
 
@@ -1023,7 +1022,7 @@ button {
 .project-card {
   cursor: pointer;
   width: 20rem;
-  height: 28rem;
+  height: 30rem;
   border-radius: 20px;
   background: ghostwhite;
   position: relative;
@@ -1132,6 +1131,10 @@ button {
   padding-right: 1rem;
 }
 
+.project-details p{
+  line-height: 1.25rem;
+}
+
 .project-ending-line{
   display: flex;
   justify-content: center;
@@ -1194,6 +1197,7 @@ button {
 /* education section styling starts here*/
 
 .education-timeline-section{
+  margin-top: 5rem;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -1203,6 +1207,7 @@ button {
 }
 
 .education-timeline-section h1{
+  font-family: "Trirong", serif;
   font-size: 2rem;
   transform: skew(17deg);
   margin: 0;
@@ -1322,8 +1327,16 @@ button {
 }
 
 .timeline-content h2,p{
+  font-family: "Trirong", serif;
   margin: 0;
+
 }
+
+.timeline-content p{
+  font-size: 1.1rem;
+}
+
+
 
 @media screen and (max-width: 1048px) {
   .timeline::after {

@@ -187,7 +187,17 @@ export default function Home() {
       </section>
       {/* About me section ends here */}
 
-      {/* Projects section begins here */}
+      {/* Education section begins here */}
+      <section className="education-timeline-section" id='education'>
+      <div className="diagonal-heading">
+          <h1>Education</h1>
+      </div>
+      <Timeline/>
+      </section>
+
+      {/* Education section ends here */}
+
+      {/* Project section begins here */}
       <section className="project-section" id='projects'>
         <div className="main-project-container">
           <div className="diagonal-heading">
@@ -223,12 +233,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="education-timeline-section">
-      <div className="diagonal-heading">
-          <h1>Education</h1>
-      </div>
-      <Timeline/>
-      </section>
+      {/* Project section ends here */}
     </>
   )
 }

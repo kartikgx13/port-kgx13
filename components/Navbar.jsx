@@ -73,7 +73,7 @@ function Navbar(props) {
             Skills
             </Link></li>
             <li>
-            <Link  style={{color:navlink}} to="#" offset={0} spy={true} smooth={true} duration={500}>
+            <Link  style={{color:navlink}} to="education" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faBook}
             style={{width:"20px",paddingRight:"7px",color:navlink}}
