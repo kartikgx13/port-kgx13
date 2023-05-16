@@ -1,4 +1,8 @@
+
 {
+  "resolutions": {
+    "react": "18.2.0"
+  },
   "name": "port_kgx13",
   "version": "0.1.0",
   "private": true,
