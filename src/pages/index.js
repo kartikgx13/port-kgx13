@@ -10,6 +10,7 @@ import { useState } from 'react'
 import SkillsCard from '../../components/SkillsCard'
 import ProjectCard from '../../components/ProjectCard'
 import Timeline from '../../components/Timeline'
+import ProgressCards from '../../components/ProgressCards'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -172,16 +173,16 @@ export default function Home() {
               for data science such as <b>Scikit-learn for ML</b> and <b>Tensorflow for Deep learning</b>&#46;
             </p>
             <p className="bar-besides">
-              Click the below button to toggle between <b>BarChart View</b> and <b>CardView</b>
+              Click the below button to toggle between <b>ProgressBar View</b> and <b>CardView</b>
             </p>
             <div className="resume-button" onClick={handleClick}>
             <button>
-            {click ? ("CardView") : ("BarChart")}
+            {click ? ("CardView") : ("ProgressBar")}
             </button>
            </div>
           </div>
           <div className="skills-right-section">
-            {click ? (<BarChartDemo label="Proficiency(%)" data={[60,40,30,75,60,50]}/>) : (<SkillsCard/>)}
+            {click ? (<ProgressCards/>) : (<SkillsCard/>)}
           </div>
         </div>
       </section>
@@ -234,6 +235,7 @@ export default function Home() {
         </div>
       </section>
       {/* Project section ends here */}
+      
     </>
   )
 }
