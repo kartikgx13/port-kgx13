@@ -1,6 +1,6 @@
 import { faBars, faBook, faBookSkull, faBuilding, faBuildingShield, faBullseye, faCircle, faCircleInfo, faCross, faDiagramProject, faGears, faHome, faLaptopCode, faRectangleAd, faRectangleXmark, faScrewdriverWrench, faServer, faTimes, faUserPlus, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { use } from 'react'
 import { useEffect } from 'react'
 import { useRef } from 'react'
 import { Inter } from 'next/font/google'
@@ -14,8 +14,17 @@ function Navbar(props) {
   const [navbarBackground, setNavbarBackground] = useState("transparent")
   const [navbarShadow, setNavShadow] = useState("transparent")
   const [navlink, setNavLink] = useState("black")
+  const [activeLink, setActiveLink] = useState("");
+
+
+  //logic to change css of links after click
   const [click,setClick]=useState(false)
-  const handleClick=()=>setClick(!click)
+  const handleClick = (link) => {
+    setActiveLink(link);
+    setClick(!click);
+  };
+  
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +57,9 @@ function Navbar(props) {
         <div className="nav-links-container">
           <ul className={click ? "nav-links active" : "nav-links"}>
             <li>
-            <Link  style={{color:navlink}} to="home" offset={0} spy={true} smooth={true} duration={500}>
+            <Link
+            onClick={() => handleClick("home")} 
+            style={{ backgroundColor: activeLink === "home" ? "red" : "", color:navlink}} to="home" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faHome}
             style={{width:"20px",paddingRight:"7px",color:navlink}}
@@ -56,7 +67,9 @@ function Navbar(props) {
             </Link>
             </li>
             <li>
-            <Link  style={{color:navlink}} to="about" offset={0} spy={true} smooth={true} duration={500}>
+            <Link 
+            onClick={() => handleClick("about")}
+            style={{ backgroundColor: activeLink === "about" ? "red" : "" ,color:navlink}} to="about" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faCircleInfo}
             style={{width:"20px",paddingRight:"7px",color:navlink}}
@@ -65,7 +78,9 @@ function Navbar(props) {
             </Link>
             </li>
             <li>
-            <Link  style={{color:navlink}} to="skills" offset={0} spy={true} smooth={true} duration={500}>
+            <Link
+            onClick={() => handleClick("skill")} 
+            style={{ backgroundColor: activeLink === "skill" ? "red" : "", color:navlink}} to="skills" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faScrewdriverWrench}
             style={{width:"20px",paddingRight:"7px",color:navlink}}
@@ -73,7 +88,9 @@ function Navbar(props) {
             Skills
             </Link></li>
             <li>
-            <Link  style={{color:navlink}} to="education" offset={0} spy={true} smooth={true} duration={500}>
+            <Link
+            onClick={() => handleClick("education")} 
+            style={{ backgroundColor: activeLink === "education" ? "red" : "", color:navlink}} to="education" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faBook}
             style={{width:"20px",paddingRight:"7px",color:navlink}}
@@ -81,15 +98,20 @@ function Navbar(props) {
             Education
             </Link></li>
             <li>
-            <Link  style={{color:navlink}} to="projects" offset={0} spy={true} smooth={true} duration={500}>
+            <Link
+            onClick={() => handleClick("projects")} 
+            style={{ backgroundColor: activeLink === "projects" ? "red" : "", color:navlink}} to="projects" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faGears}
             style={{width:"20px",paddingRight:"7px",color:navlink}}
             />
             Projects
-            </Link></li>
+            </Link>
+            </li>
             <li style={{color:navlink}}>
-            <Link  style={{color:navlink}} to="#" offset={0} spy={true} smooth={true} duration={500}>
+            <Link
+            onClick={() => handleClick("connect")} 
+            style={{ backgroundColor: activeLink === "connect" ? "red" : "", color:navlink}} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faUserPlus}
             style={{width:"20px",paddingRight:"7px",color:navlink}}
