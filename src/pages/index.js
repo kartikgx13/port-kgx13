@@ -234,7 +234,9 @@ export default function Home() {
         </div>
       </section>
       {/* Project section ends here */}
-      
+      <div>
+
+      </div>
     </>
   )
 }
