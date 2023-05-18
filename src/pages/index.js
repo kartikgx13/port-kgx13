@@ -10,6 +10,7 @@ import { useState } from 'react'
 import SkillsCard from '../../components/SkillsCard'
 import ProjectCard from '../../components/ProjectCard'
 import Timeline from '../../components/Timeline'
+import ProgressTab from '../../components/ProgressTab'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -181,7 +182,7 @@ export default function Home() {
            </div>
           </div>
           <div className="skills-right-section">
-            {click ? (<BarChartDemo/>) : (<SkillsCard/>)}
+            {click ? (<ProgressTab/>) : (<SkillsCard/>)}
           </div>
         </div>
       </section>
@@ -234,9 +235,12 @@ export default function Home() {
         </div>
       </section>
       {/* Project section ends here */}
+<<<<<<< HEAD
       <div>
 
       </div>
+=======
+>>>>>>> a0b9e47d18cb81fb4623f5db92f79c46cdd5ae65
     </>
   )
 }
