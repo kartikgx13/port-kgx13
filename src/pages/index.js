@@ -10,7 +10,6 @@ import { useState } from 'react'
 import SkillsCard from '../../components/SkillsCard'
 import ProjectCard from '../../components/ProjectCard'
 import Timeline from '../../components/Timeline'
-import ProgressTab from '../../components/ProgressTab'
 
 const inter = Inter({ subsets: ['latin'] })
 
