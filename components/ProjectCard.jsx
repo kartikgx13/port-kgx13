@@ -10,15 +10,15 @@ function ProjectCard(props) {
       <div className="project-image">
       <Image
               width={1000}
-              height={200}
+              height={175}
               src={props.image}
               alt="github"
       />
       </div>
        <div className="project-heading">
        <Image
-              width={40}
-              height={40}
+              width={30}
+              height={30}
               src={props.project_logo}
               alt="github"
               style={{borderRadius:"50%"}}
@@ -30,11 +30,11 @@ function ProjectCard(props) {
         <p style={{marginTop:"0.5rem"}}><b>{props.hashtags}</b></p>
        </div>
      </div>
-     <Link href="#">
+     <Link href={props.gitlink}>
      <div className="project-card-button">
      <Image
-              width={30}
-              height={30}
+              width={20}
+              height={20}
               src="/images/git_logo.jpg"
               alt="github"
               style={{borderRadius:"50%",border:"2px solid #282828"}}
