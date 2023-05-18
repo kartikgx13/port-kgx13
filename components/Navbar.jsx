@@ -23,6 +23,10 @@ function Navbar(props) {
     setActiveLink(link);
     setClick(!click);
   };
+
+  const handleHamLink = ()=>{
+    setClick(!click);
+  }
   
   
 
@@ -58,8 +62,9 @@ function Navbar(props) {
           <ul className={click ? "nav-links active" : "nav-links"}>
             <li>
             <Link
+            className={activeLink === "home" ? "nav-link-clicked" : ""}
             onClick={() => handleClick("home")} 
-            style={{ backgroundColor: activeLink === "home" ? "red" : "", color:navlink}} to="home" offset={0} spy={true} smooth={true} duration={500}>
+            style={{color:navlink}} to="home" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faHome}
             style={{width:"20px",paddingRight:"7px",color:navlink}}
@@ -68,8 +73,9 @@ function Navbar(props) {
             </li>
             <li>
             <Link 
+            className={activeLink === "about" ? "nav-link-clicked" : ""}
             onClick={() => handleClick("about")}
-            style={{ backgroundColor: activeLink === "about" ? "red" : "" ,color:navlink}} to="about" offset={0} spy={true} smooth={true} duration={500}>
+            style={{color:navlink}} to="about" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faCircleInfo}
             style={{width:"20px",paddingRight:"7px",color:navlink}}
@@ -79,8 +85,9 @@ function Navbar(props) {
             </li>
             <li>
             <Link
+            className={activeLink === "skill" ? "nav-link-clicked" : ""}
             onClick={() => handleClick("skill")} 
-            style={{ backgroundColor: activeLink === "skill" ? "red" : "", color:navlink}} to="skills" offset={0} spy={true} smooth={true} duration={500}>
+            style={{color:navlink}} to="skills" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faScrewdriverWrench}
             style={{width:"20px",paddingRight:"7px",color:navlink}}
@@ -89,8 +96,9 @@ function Navbar(props) {
             </Link></li>
             <li>
             <Link
+            className={activeLink === "education" ? "nav-link-clicked" : ""}
             onClick={() => handleClick("education")} 
-            style={{ backgroundColor: activeLink === "education" ? "red" : "", color:navlink}} to="education" offset={0} spy={true} smooth={true} duration={500}>
+            style={{color:navlink}} to="education" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faBook}
             style={{width:"20px",paddingRight:"7px",color:navlink}}
@@ -99,8 +107,9 @@ function Navbar(props) {
             </Link></li>
             <li>
             <Link
+            className={activeLink === "projects" ? "nav-link-clicked" : ""}
             onClick={() => handleClick("projects")} 
-            style={{ backgroundColor: activeLink === "projects" ? "red" : "", color:navlink}} to="projects" offset={0} spy={true} smooth={true} duration={500}>
+            style={{color:navlink}} to="projects" offset={0} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faGears}
             style={{width:"20px",paddingRight:"7px",color:navlink}}
@@ -110,8 +119,9 @@ function Navbar(props) {
             </li>
             <li style={{color:navlink}}>
             <Link
+            className={activeLink === "connect" ? "nav-link-clicked" : ""}
             onClick={() => handleClick("connect")} 
-            style={{ backgroundColor: activeLink === "connect" ? "red" : "", color:navlink}} spy={true} smooth={true} duration={500}>
+            style={{color:navlink}} spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faUserPlus}
             style={{width:"20px",paddingRight:"7px",color:navlink}}
@@ -121,7 +131,7 @@ function Navbar(props) {
             </li>
           </ul>
         </div>
-        <div className="hamburger-menu" onClick={handleClick}>
+        <div className="hamburger-menu" onClick={handleHamLink}>
           {
           click ? (<FontAwesomeIcon
             icon={faXmark}

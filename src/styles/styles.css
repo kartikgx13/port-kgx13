@@ -63,10 +63,11 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .nav-links li a{
+  box-sizing: border-box;
   text-decoration: none;
   color: rgb(27, 27, 27);
   transition: 0.3s ease-out;
@@ -85,7 +86,17 @@ body{
   cursor: pointer;
   list-style-type: none;
   font-weight: bold;
+  box-sizing: border-box;
 }
+
+.nav-link-clicked{
+  box-sizing: border-box;
+  background-color: #00a6de;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 
 
 .hamburger-menu{
