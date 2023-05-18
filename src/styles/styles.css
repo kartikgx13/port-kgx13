@@ -944,85 +944,108 @@ button {
   grid-gap: 30px;
 }
 
-.box
-{
-  padding: 1rem;
-  background:#fff;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  position:relative;
-  flex-direction:column;
-  box-shadow:0 30px 60px rgba(0,0,0,.4);
-  transition: transform .2s;
-  width: 130px;
-  height: 150px;
+.wrapper {
+  width: 100%;
+  font-family: 'Trirong',serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-/* .box:hover
-{
- transform:scale(1.2);
-} */
-.box .percent
-{
-  width:150px;
-  height:150px;
-  position:relative;
+.skill {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  position: relative;
 }
-.box .percent svg
-{
-  width:130px;
-  height:130px;
-  position:relative;
+
+.skill > p {
+font-size: 18px;
+font-weight: 700;
+color: #1a1716;
+margin: 0;
 }
-.box .percent svg circle
-{
-  width:130px;
-  height:130px;
-  fill:none;
-  stroke-width:10;
-  stroke:#000;
-  transform:translate(25px,17px);
-  stroke-dasharray:440;
-  stroke-dashoffset:440;
-  stroke-linecap:round;
+
+.skill-bar:hover{
+  box-sizing: border-box;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ transform: scale(0.95);
 }
-.box .percent svg circle:nth-child(1)
-{
-  stroke-dashoffset:0;
-  stroke:#f3f3f3;
+
+
+.skill-bar {
+width: 100%;
+height: 1.5rem;
+display: block;
+position: relative;
+border-radius: 0.5rem;
+cursor: pointer;
+box-sizing: border-box;
+transition: 0.3s ease-out;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+.skill-bar span {
+position: absolute;
+top: -35px;
+font-size: 1.25rem;
+padding: 3px 0;
+font-weight: 500;
 }
-.box .percent svg circle:nth-child(2)
-{
-  stroke-dashoffset:calc(440 - (440 * 87) / 100);
-  stroke:#03a9f4;
+
+  .skill-bar {
+position: relative;
+  }
+
+  .skill1 {
+width: 70%;
+  }
+
+  .skill1 .skill-count1 {
+    left: 0;
 }
-.box .percent .num
-{
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  position:absolute;
-  color:#111;
-}
-.box .percent .num h2
-{
-  font-size:1.5rem;
-}
-.box .percent .num h2 span
-{
-  font-size:1.5rem;
-}
-.box .text
-{
-  padding: 5px 0 0;
-  color:#999;
-  font-weight:700;
-  letter-spacing:1px;
-}
+
+  .skill2 {
+width: 45%;
+  }
+  .skill2 .skill-count2 {
+left: 0;
+  }
+
+  .skill3{
+width: 35%;
+  }
+
+  .skill3 .skill-count3 {
+left: 0;
+  }
+
+  .skill4{
+    width: 55%;
+      }
+    
+      .skill4 .skill-count4 {
+    left: 0;
+      }
+
+      .skill5{
+width: 30%;
+  }
+
+  .skill5 .skill-count5 {
+left: 0;
+  }
+  .skill6{
+width: 25%;
+  }
+
+  .skill6 .skill-count6 {
+left: 0;
+  }
+
 
 .main-progress-container{
   height: 100%;
@@ -1124,6 +1147,73 @@ button {
   .main-progress-container{
     grid-template-columns: 150px 150px;
     grid-gap: 20px;
+  }
+
+  .skill {
+    width: 80%;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .skill1 {
+    width: 70%;
+      }
+    
+      .skill1 .skill-count1 {
+        right: 0;
+    }
+    
+      .skill2 {
+    width: 45%;
+      }
+      .skill2 .skill-count2 {
+    left: 0;
+      }
+    
+      .skill3{
+    width: 35%;
+      }
+    
+      .skill3 .skill-count3 {
+    left: 0;
+      }
+    
+      .skill4{
+        width: 55%;
+          }
+        
+          .skill4 .skill-count4 {
+        left: 0;
+          }
+    
+          .skill5{
+    width: 30%;
+      }
+    
+      .skill5 .skill-count5 {
+    left: 0;
+      }
+      .skill6{
+    width: 25%;
+      }
+    
+      .skill6 .skill-count6 {
+    left: 0;
+      }
+  
+  .skill p{
+    position: absolute;
+    right: 0;
+  }
+
+  .wrapper{
+    gap: 3rem;
+  }
+
+  .skill-bar:hover{
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: none;
   }
 
 }
@@ -1339,6 +1429,8 @@ button {
   .project-details p{
     font-size: 0.85rem;
   }
+
+  
 }
 
 /* project section styling ends here*/
