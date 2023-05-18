@@ -181,7 +181,7 @@ export default function Home() {
            </div>
           </div>
           <div className="skills-right-section">
-            {click ? (<ProgressTab/>) : (<SkillsCard/>)}
+            {click ? (<BarChartDemo/>) : (<SkillsCard/>)}
           </div>
         </div>
       </section>
