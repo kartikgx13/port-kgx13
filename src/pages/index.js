@@ -11,6 +11,8 @@ import SkillsCard from '../../components/SkillsCard'
 import ProjectCard from '../../components/ProjectCard'
 import Timeline from '../../components/Timeline'
 import HorizontalProgress from '../../components/HorizontalProgress'
+import HorizontalAccordion from '../../components/HorizontalAccordion'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -44,44 +46,52 @@ export default function Home() {
                </section>
             </div>
             <div className="social-media-icons">
+              <Link href="https://www.facebook.com/profile.php?id=100082166785167">
               <Image
               width={50}
               height={50}
               src="/images/facebook.png"
               alt="facebook"
-              
+              className='facebook'
               />
+              </Link>
+              <Link href="https://github.com/kartikgx13">
               <Image
               width={50}
               height={50}
               src="/images/github3.png"
               alt="github"
-          
-
+              className='github'
               />
+              </Link>
+              <Link href="https://twitter.com/">
               <Image
               width={50}
               height={50}
               src="/images/twitter.png"
               alt="twitter"
-            
-
+              className='twitter'
               />
+              </Link>
+              <Link href="https://www.linkedin.com/in/kartik-gavande-4440b020b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvBWc%2FloOSHCgsSkcGbKFXg%3D%3D">
               <Image
               width={50}
               height={50}
               src="/images/linkedin.png"
               alt="linkedin"
-
+              className='linkedin'
               />
+              </Link>
 
+             <Link href="https://discord.com/channels/@me">
              <Image
               width={50}
               height={50}
               src="/images/discord.png"
               alt="linkedin"
-
+              className='discord'
               />
+             </Link>
             </div>
           </div>
           <div className="hero-section-right">
@@ -235,6 +245,14 @@ export default function Home() {
         </div>
       </section>
       {/* Project section ends here */}
+
+      {/* connect section starts here */}
+      <section className="main-connect-section" id="connect">
+      <div className="diagonal-heading">
+          <h1>Connect</h1>
+          </div>
+        <HorizontalAccordion/>
+      </section>
     </>
   )
 }

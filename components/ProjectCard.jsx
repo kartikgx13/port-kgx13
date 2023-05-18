@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function ProjectCard(props) {
   return (
@@ -29,16 +30,19 @@ function ProjectCard(props) {
         <p style={{marginTop:"0.5rem"}}><b>{props.hashtags}</b></p>
        </div>
      </div>
+     <Link href="#">
      <div className="project-card-button">
      <Image
               width={30}
               height={30}
-              src="/images/github3.png"
+              src="/images/git_logo.jpg"
               alt="github"
-              style={{borderRadius:"50%"}}
+              style={{borderRadius:"50%",border:"2px solid #282828"}}
+
       />
       Github Link 
      </div>
+     </Link>
    </div>
     </>
   )

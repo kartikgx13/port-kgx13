@@ -23,7 +23,7 @@ body{
     width: 100%;
     position: fixed;
     top: 0;
-    height: 7%;
+    height: 9%;
     background-color: transparent;
 }
 
@@ -206,23 +206,24 @@ body{
   align-items: center;
 }
 
-.social-media-icons img:nth-child(1):hover{
+
+.facebook:hover{
   background-color: #334c8c;
 }
 
-.social-media-icons img:nth-child(2):hover{
+.github:hover{
   background-color: #9b59b6;
 }
 
-.social-media-icons img:nth-child(3):hover{
+.twitter:hover{
   background-color: #00a6de;
 }
 
-.social-media-icons img:nth-child(4):hover{
+.linkedin:hover{
   background-color: #007ab9;
 }
 
-.social-media-icons img:nth-child(5):hover{
+.discord:hover{
   background-color: #8c9eff;
 }
 
@@ -1298,7 +1299,7 @@ left: 0;
   transform: translate(-50%, 125%);
   width: 50%;
   border-radius: 1rem;
-  border: 2px solid #192591;
+  border: 2px solid #394867;
   background-color: ghostwhite;
   color: black;
   font-size: 1rem;
@@ -1316,7 +1317,7 @@ left: 0;
  }
 
  .project-card-button:hover{
-  background-color: #9b59b6;
+  background-color: #282828;
   color: white;
  }
  
@@ -1335,7 +1336,7 @@ left: 0;
  
  /*Hover*/
  .project-card:hover {
-  border-color: #192591;
+  border-color: #394867;
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
  }
  
@@ -1650,4 +1651,21 @@ left: 0;
   .timeline-content h2{
    font-size: 1.25rem;
   }
+}
+
+/*connect page styling starts here*/
+
+.main-connect-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-connect-section h1{
+  font-family: "Trirong", serif;
+  font-size: 2rem;
+  transform: skew(17deg);
+  margin: 0;
 }

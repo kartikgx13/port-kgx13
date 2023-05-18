@@ -121,7 +121,7 @@ function Navbar(props) {
             <Link
             className={activeLink === "connect" ? "nav-link-clicked" : ""}
             onClick={() => handleClick("connect")} 
-            style={{color:navlink}} spy={true} smooth={true} duration={500}>
+            style={{color:navlink}} to="connect" spy={true} smooth={true} duration={500}>
             <FontAwesomeIcon
             icon={faUserPlus}
             style={{width:"20px",paddingRight:"7px",color:navlink}}
