@@ -32,7 +32,7 @@ function Navbar(props) {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 700) {
+      if (window.pageYOffset > 532) {
         setNavbarBackground('#394867') // change to the desired background color
         setNavShadow("rgba(100, 100, 111, 0.2) 0px 7px 29px 0px")
         setNavLink("white")
@@ -115,18 +115,6 @@ function Navbar(props) {
             style={{width:"20px",paddingRight:"7px",color:navlink}}
             />
             Projects
-            </Link>
-            </li>
-            <li style={{color:navlink}}>
-            <Link
-            className={activeLink === "connect" ? "nav-link-clicked" : ""}
-            onClick={() => handleClick("connect")} 
-            style={{color:navlink}} to="connect" spy={true} smooth={true} duration={500}>
-            <FontAwesomeIcon
-            icon={faUserPlus}
-            style={{width:"20px",paddingRight:"7px",color:navlink}}
-            />
-            Connect
             </Link>
             </li>
           </ul>
