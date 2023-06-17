@@ -937,18 +937,18 @@ button {
 }
 
 .grid-item:nth-child(7):hover{
-  background-color: #272727;
+  background-color: #447ca3;
   transition: 0.3s;
   
 }
 
 .grid-item:nth-child(8):hover{
-  background-color: #a24995;
+  background-color: #1b7242;
   transition: 0.3s;
 }
 
 .grid-item:nth-child(9):hover{
-  background-color: #12376e;
+  background-color: #f1ca00;
   transition: 0.3s;
 }
 
@@ -1418,7 +1418,7 @@ left: 0;
   }
 
   .project-card{
-    height: 28rem;
+    height: 31rem;
     width: 80%;
   }
 

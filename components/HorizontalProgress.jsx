@@ -30,15 +30,15 @@ function HorizontalProgress() {
         </div>
         <div className="skill">
        <p>30%</p>
-            <div className='skill-bar skill5' style={{backgroundImage:"linear-gradient(to right,#f89838,#349ccc)",backgroundRepeat:"no-repeat",borderRadius:"0.5rem"}}>
-             <span className='skill-count5'>Sklearn</span>
+            <div className='skill-bar skill5' style={{backgroundImage:"linear-gradient(to right,#1b7242,#84b49b)",backgroundRepeat:"no-repeat",borderRadius:"0.5rem"}}>
+             <span className='skill-count5'>Excel</span>
             </div>
         </div>
         <div className="skill">
            <p>25%
            </p>
-            <div className='skill-bar skill6' style={{backgroundImage:"linear-gradient(to right,#f3bb3b,#e45c2b)",backgroundRepeat:"no-repeat",borderRadius:"0.5rem"}}>
-             <span className='skill-count6'>Tensorflow</span>
+            <div className='skill-bar skill6' style={{backgroundImage:"linear-gradient(to right,#f3cb04,#dbbd41)",backgroundRepeat:"no-repeat",borderRadius:"0.5rem"}}>
+             <span className='skill-count6'>PowerBI</span>
             </div>
         </div>
       </div>

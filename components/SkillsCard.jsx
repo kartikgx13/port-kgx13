@@ -63,7 +63,7 @@ function SkillsCard() {
         <Image
               width={80}
               height={90}
-              src="/images/unity.png"
+              src="/images/mysql.png"
               alt="twitter"
 
         />
@@ -72,7 +72,7 @@ function SkillsCard() {
         <Image
               width={80}
               height={90}
-              src="/images/c-sharp.png"
+              src="/images/excel.png"
               alt="twitter"
         />
         </div>
@@ -80,7 +80,7 @@ function SkillsCard() {
         <Image
               width={80}
               height={90}
-              src="/images/Flutter.png"
+              src="/images/powerbi.png"
               alt="twitter"
         />
         </div>

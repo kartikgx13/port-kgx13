@@ -179,10 +179,11 @@ export default function Home() {
               with <b>React&#46;Js and Next&#46;Js</b> which ease out the development process&#46;
             </p>
             <p>
-              My another area of interest is <b>Data Science</b> so for next set of skills&#44;
-               <b>Python</b> is must&#46;I have learnt python from <b>Basics to an Intermediate</b> level
-              and focusing more on the libraries and packages which are more important
-              for data science such as <b>Scikit-learn for ML</b> and <b>Tensorflow for Deep learning</b>&#46;
+              My another area of interest is <b>Data Analytics</b> so for next set of skills&#44;
+              <b>Python</b> is must&#46;I have learnt python from <b>Basics to an Intermediate</b> level
+              The other important skills which I am currently learning for data analytics is <b>Excel,
+              MicrosoftPowerBI and MySql</b> .Since as a data analyst it is very important to work with data
+              hence these 3 technologies becomes a must in this field.
             </p>
             <p className="bar-besides">
               Click the below button to toggle between <b>ProgressBar View</b> and <b>CardView</b>
