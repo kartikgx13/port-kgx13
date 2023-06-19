@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import * as React from "react";
 import { useCallback } from "react";
 import ScrollToTop from "../../components/ScrollToTop";
+import { ThemeProvider } from 'next-themes'
 
 export default function App({ Component, pageProps }) {
 const timeoutRef = React.useRef();
@@ -25,5 +26,7 @@ const timeoutRef = React.useRef();
       clearTimer();
     };
   }, [clearTimer]);
-  return <Component {...pageProps} />
+  return (
+    <Component {...pageProps} />
+  )
 }

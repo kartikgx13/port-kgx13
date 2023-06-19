@@ -13,12 +13,19 @@ import Timeline from '../../components/Timeline'
 import HorizontalProgress from '../../components/HorizontalProgress'
 import HorizontalAccordion from '../../components/HorizontalAccordion'
 import Link from 'next/link'
+import { useTheme } from 'next-themes'
+import ThemeSwitch from '../../components/ThemeSwitch'
+import ColorChanger from '../../components/ColorChanger'
+import dynamic from 'next/dynamic'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [click,setClick]=useState(false)
   const handleClick=()=>setClick(!click)
+
+  const DynamicColorChanger = dynamic(() => import('../../components/ColorChanger'), { ssr: false });
+
 
   const para1="This is an gaming application which is made for elementary school kids to learn various concepts of mathematics.The game tries to teach these mathematical concepts throught their favourite childhood game of snake and apples."
   const hash1="#C #Unity #Maths #SnakeGame"
@@ -248,6 +255,7 @@ export default function Home() {
         </div>
       </section>
       {/* Project section ends here */}
+      <DynamicColorChanger/>
     </>
   )
 }
