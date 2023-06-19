@@ -23,8 +23,13 @@ body{
   --edu_container_bg:#89CFFD;
   --hero_start: #8e9eab;
   --hero_end: #eef2f3;
-  --nav_start: #8e9eab;
-  --nav_end: #eef2f3;
+  --nav_start: #0A6EBD;
+  --nav_end: #0A6EBD;
+  --main_btn_color: ghostwhite;
+  --edu_content: ghostwhite;
+  --skil_bg: transparent;
+  --git_btn: ghostwhite;
+  --git_text: white;
 }
 
 
@@ -693,6 +698,10 @@ body{
   color: var(--text_color);
 }
 
+.about-section-right h1:hover{
+  color: white;
+}
+
 .diagonal-heading{
   font-family: "Trirong", serif;
   background: var(--diagonal_heading_before);
@@ -716,9 +725,7 @@ body{
   transition: all 0.5s;
 }
 
-.diagonal-heading:hover {
-  color: var(--diagonal_heading_before);
-}
+
 
 .diagonal-heading:hover::before {
   left: 0;
@@ -732,7 +739,7 @@ button {
   border-radius: 15px;
   color: var(--text_color);
   z-index: 1;
-  background: var(--diagonal_heading_before);
+  background-color: var(--main_btn_color);
   position: relative;
   font-weight: 1000;
   font-size: 17px;
@@ -741,6 +748,7 @@ button {
   transition: all 250ms;
   overflow: hidden;
   margin-top: 1rem;
+  box-sizing: border-box;
  }
  
  button::before {
@@ -759,7 +767,7 @@ button {
  }
  
  button:hover {
-  color: var(--diagonal_heading_before);
+  color: var(--main_btn_color);
   cursor: pointer;
  }
  
@@ -862,6 +870,10 @@ button {
   color: var(--text_color);
 }
 
+.skills-left-section h1:hover{
+  color: white;
+}
+
 .skills-left-section p{
   font-family: "Trirong", serif;
   font-size: 1rem;
@@ -930,6 +942,7 @@ button {
   border-radius: 30%;
   box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 8px;
+  background-color: var(--skill_bg);
 }
 
 .grid-item img{
@@ -1309,6 +1322,10 @@ left: 0;
   color: var(--text_color);
 }
 
+.main-project-container h1:hover{
+  color: white;
+}
+
 .project-cards-container{
   height: 100%;
   width: 100%;
@@ -1349,7 +1366,7 @@ left: 0;
   width: 50%;
   border-radius: 1rem;
   border: 2px solid var(--project_card_border);
-  background-color:var(--diagonal_heading_before);
+  background-color:var(--git_btn);
   color: var(--text_color);
   font-size: 0.85rem;
   padding: .5rem 1rem;
@@ -1367,7 +1384,7 @@ left: 0;
 
  .project-card-button:hover{
   background-color: var(--project_btn_bg);
-  color: var(--diagonal_heading_before);
+  color: var(--git_text);
  }
  
  .text-body {
@@ -1518,6 +1535,10 @@ left: 0;
   color: var(--text_color);
 }
 
+.education-timeline-section h1:hover{
+  color: white;
+}
+
 .timeline{
   position: relative;
   max-width: 1200px;
@@ -1618,7 +1639,7 @@ left: 0;
 
 .timeline-content{
   padding: 0.5rem;
-  background-color: var(--background_color);
+  background-color: var(--edu_content);
   position: relative;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -1731,7 +1752,7 @@ left: 0;
 
 /* The slider */
 .slider {
-  --background: #28096b;
+  --background: rgb(20,20,20);
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -1751,16 +1772,32 @@ left: 0;
   border-radius: 50%;
   left: 10%;
   bottom: 15%;
-  box-shadow: inset 8px -4px 0px 0px #fff000;
+  box-shadow: inset 8px -4px 0px 0px ghostwhite;
   background: var(--background);
   transition: .5s;
 }
 
 input:checked + .slider {
-  background-color: #522ba7;
+  background-color: ghostwhite;
 }
 
 input:checked + .slider:before {
   transform: translateX(100%);
-  box-shadow: inset 15px -4px 0px 15px #fff000;
+  box-shadow: inset 15px -4px 0px 15px rgb(20, 20, 20);
+}
+
+
+.color-toggle-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1rem;
+}
+
+.toggle-text{
+  color: var(--text_color);
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Trirong", serif;
 }
