@@ -23,6 +23,8 @@ body{
   --edu_container_bg:#89CFFD;
   --hero_start: #8e9eab;
   --hero_end: #eef2f3;
+  --nav_start: #8e9eab;
+  --nav_end: #eef2f3;
 }
 
 
@@ -38,11 +40,11 @@ body{
 
 .navbar-container{
     z-index: 999;
-    background-image: linear-gradient(to right,#bdc3c7, #2c3e50);
+    background-image: linear-gradient(to right,var(--nav_start),var(--nav_end));
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 87%;
+    width: 86%;
     position: fixed;
     top: 0;
     height: 9%;
@@ -50,6 +52,7 @@ body{
     margin: 1rem;
     border-radius: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0.5rem;
 }
 
 .navbar-logo{
@@ -95,7 +98,7 @@ body{
 .nav-links li a{
   box-sizing: border-box;
   text-decoration: none;
-  color: rgb(27, 27, 27);
+  color: var(--text_color);
   transition: 0.3s ease-out;
 }
 
@@ -1708,4 +1711,56 @@ left: 0;
   .timeline-content h2{
    font-size: 1.25rem;
   }
+}
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #28096b;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: .5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+  background: var(--background);
+  transition: .5s;
+}
+
+input:checked + .slider {
+  background-color: #522ba7;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff000;
 }
