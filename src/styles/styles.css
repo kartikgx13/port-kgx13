@@ -69,7 +69,7 @@ body{
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -111,7 +111,7 @@ body{
 
 .nav-links li{
   color: rgb(27, 27, 27);
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   position: relative;
   padding: 5px;
@@ -164,7 +164,7 @@ body{
 
   .nav-links li{
     color: white;
-    font-family: "Trirong", serif;
+    font-family: 'Poppins', sans-serif;
     padding: 1rem 0;
     font-size: 1rem;
     cursor: pointer;
@@ -184,10 +184,11 @@ body{
   }
 
   .navbar-container{
+    padding: 0px;
     margin: 0;
-    padding: 5px;
     width: 100%;
-    border-radius: none;
+    border-radius: 0px;
+    
   }
 
 
@@ -270,7 +271,7 @@ body{
 .hero-section-left h1{
   font-size: 2rem;
   margin: 0;
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container p{
@@ -680,7 +681,7 @@ body{
 }
 
 .about-section-right p{
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   text-align: right;
   padding-left: 10px;
@@ -689,7 +690,7 @@ body{
 }
 
 .about-section-right h1{
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
@@ -703,7 +704,7 @@ body{
 }
 
 .diagonal-heading{
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
   background: var(--diagonal_heading_before);
   border: none;
   padding: 0.25rem 1rem;
@@ -861,7 +862,7 @@ button {
 }
 
 .skills-left-section h1{
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
@@ -875,7 +876,7 @@ button {
 }
 
 .skills-left-section p{
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   text-align: left;
   padding-left: 10px;
@@ -1033,6 +1034,7 @@ font-size: 18px;
 font-weight: 700;
 color: var(--project_btn_bg);
 margin: 0;
+color: var(--text_color);
 }
 
 .skill-bar:hover{
@@ -1059,6 +1061,7 @@ top: -35px;
 font-size: 1.25rem;
 padding: 3px 0;
 font-weight: 500;
+color: var(--text_color);
 }
 
   .skill-bar {
@@ -1122,7 +1125,8 @@ left: 0;
 .progress-item h2{
   margin: 0;
   font-size: 1rem;
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text_color);
 }
 
 .progress-item{
@@ -1314,7 +1318,7 @@ left: 0;
 }
 
 .main-project-container h1{
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   font-weight: bold;
   margin: 0;display: inline-block;
@@ -1361,7 +1365,7 @@ left: 0;
  
  .project-card-button {
   cursor: pointer;
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
   transform: translate(-50%, 125%);
   width: 50%;
   border-radius: 1rem;
@@ -1388,13 +1392,13 @@ left: 0;
  }
  
  .text-body {
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
   color: rgb(134, 134, 134);
  }
  
  /*Text*/
  .text-title {
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -1461,7 +1465,7 @@ left: 0;
 }
 
 .project-ending-line h2{
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
   color: var(--text_color);
 }
 
@@ -1528,7 +1532,7 @@ left: 0;
 }
 
 .education-timeline-section h1{
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   transform: skew(17deg);
   margin: 0;
@@ -1654,7 +1658,7 @@ left: 0;
 }
 
 .timeline-content h2,p{
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   color: var(--text_color);
 
@@ -1799,5 +1803,5 @@ input:checked + .slider:before {
   color: var(--text_color);
   font-size: 1rem;
   font-weight: bold;
-  font-family: "Trirong", serif;
+  font-family: 'Poppins', sans-serif;
 }

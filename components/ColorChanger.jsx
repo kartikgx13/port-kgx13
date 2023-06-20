@@ -25,6 +25,7 @@ const ColorChanger = () => {
     skill_bg: 'transparent',
     git_btn: 'ghostwhite',
     git_text: 'white',
+    edu_container_bg: '#89CFFD',
   };
 
   const [colorVariables, setColorVariables] = React.useState(() => {
