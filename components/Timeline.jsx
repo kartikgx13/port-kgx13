@@ -6,7 +6,7 @@ function Timeline() {
      <div className="timeline">
       <div className="timeline_container left">
         <div className="timeline-content">
-          <h2>Jun. 2008 - Apr. 2018</h2>
+          <h2>Jun. 2006 - Apr. 2018</h2>
           <p><b>School Name:</b> Children&#39;s Academy <br/>
             <b>Board:</b> ICSE <br/>
             <b>10th Percentage:</b> 95&#46;67&#37;
