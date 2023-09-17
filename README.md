@@ -1,8 +1,8 @@
-<span style="font-size: larger;">Expense Tracker Application</span>
+# Exepense Tracker Application
 
 Welcome to the Expense Tracker Application! This application is designed to help you manage your expenses and income easily. Below, you'll find a brief overview of the main features of the application.
 
-<span style="font-size: larger;">Features</span>
+# Features
 
 1. Dashboard
 The Dashboard provides an at-a-glance summary of your expenses and income.
@@ -25,21 +25,21 @@ Get a comprehensive view of your financial history.
 Easily identify patterns and make informed financial decisions.
 
 
-<span style="font-size: larger;">Getting started</span>
+#Getting started
 
 Clone this repository to your local machine.
 Install the required dependencies by running npm install.
 Start the application with npm start.
 
 
-<span style="font-size: larger;">Usage</span>
+# Usage
 
 Visit the [Live Demo](https://port-kgx13.vercel.app/) to explore the application.
 Add your expenses and income on the respective pages.
 Check the Dashboard and Transactions pages to monitor your finances.
 
 
-<span style="font-size: larger;">Contributing</span>
+# Contributing
 
 We welcome contributions to make this Expense Tracker Application even better! Feel free to open issues, submit pull requests, or provide feedback
 
