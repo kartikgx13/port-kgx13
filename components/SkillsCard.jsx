@@ -68,7 +68,7 @@ function SkillsCard() {
 
         />
         </div>
-        <div className="grid-item">
+        {/*<div className="grid-item">
         <Image
               width={80}
               height={90}
@@ -83,7 +83,7 @@ function SkillsCard() {
               src="/images/powerbi.png"
               alt="twitter"
         />
-        </div>
+  </div>*/}
     </div>
     </>
   )
